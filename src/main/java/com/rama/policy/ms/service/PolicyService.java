@@ -21,7 +21,15 @@ public class PolicyService {
 	public Policy createPolicy(Policy policy) {
 		
 		Customer customer;
+		//The original master method call
 		customer = customerService.getCustomerDetails(policy.getCustomerDetails().getCustomerId());
+		
+		// Excercise 3 - Usage of getForObject
+ 		//customer = customerService.getCustomerDetailsByObject(policy.getCustomerDetails().getCustomerId());
+		
+		// Excercise 3 - Usage of exchange
+		//customer = customerService.getCustomerDetailsByExchange(policy.getCustomerDetails().getCustomerId());
+		
 		policy.setCustomerDetails(customer);
 		policyRepository.save(policy);
 		return null;

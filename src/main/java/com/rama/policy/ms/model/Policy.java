@@ -33,11 +33,11 @@ public class Policy {
 	public void setPolicyEffectiveDate(Date policyEffectiveDate) {
 		this.policyEffectiveDate = policyEffectiveDate;
 	}
-	public Date getPolictEndDate() {
+	public Date getPolicyEndDate() {
 		return policyEndDate;
 	}
-	public void setPolictEndDate(Date polictEndDate) {
-		this.policyEndDate = polictEndDate;
+	public void setPolictEndDate(Date policyEndDate) {
+		this.policyEndDate = policyEndDate;
 	}
 	public Customer getCustomerDetails() {
 		return CustomerDetails;
